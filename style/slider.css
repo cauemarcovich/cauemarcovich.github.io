@@ -1,0 +1,97 @@
+/* Slider */
+
+.gd-container,
+.wd-container {
+    /* This position relative was added so the arrows can use the absolute position */
+    position: relative;
+    padding: 0 10%;
+}
+
+
+/* Dots */
+
+.tns-nav {
+    text-align: center;
+}
+
+.nav-container {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.nav-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 6px;
+    background-color: #747474;
+    color: #454545;
+}
+
+.nav-dot.active {
+    background-image: linear-gradient(#d56001, #fd9b34);
+}
+
+
+/* Arrows */
+
+.arrow {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* .arrow div {
+    width: 10px;
+    height: 42px;
+    background-image: linear-gradient(#d56001, #e97e1a);
+}
+
+.arrow div::after {
+    width: 10px;
+    height: 42px;
+    background-image: linear-gradient(#e97e1a, #fd9b34);
+    content: '';
+    position: relative;
+    display: block;
+    transform: rotate(90deg);
+} */
+
+.next-arrow {
+    right: 0;
+    justify-content: center;
+}
+
+
+/* .next-arrow div {
+    transform: rotate(-45deg) translate(12px, 10px);
+    box-shadow: -5px 4px;
+}
+
+.next-arrow div::after {
+    transform: rotate(90deg) translate(16px, 16px);
+    box-shadow: 5px 4px;
+} */
+
+.prev-arrow {
+    left: 0;
+}
+
+
+/* 
+.prev-arrow div {
+    transform: rotate(45deg) translate(10px, -12px);
+    box-shadow: 5px 4px;
+}
+
+.prev-arrow div::after {
+    transform: rotate(-90deg) translate(-16px, 16px);
+    box-shadow: -4px 5px;
+} */

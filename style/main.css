@@ -1,0 +1,283 @@
+body {
+    background-image: linear-gradient(#3d3d3d, #151515);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header,
+section,
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+header {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.break-line {
+    width: 100%;
+    height: 5px;
+    background-image: linear-gradient(#d56001, #fd9b34);
+    box-shadow: -5px 4px;
+}
+
+
+/* header */
+
+.hd-name {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: white;
+    margin: 10px 10px;
+    margin-bottom: 25px;
+}
+
+.hd-name h1 {
+    font-size: 2.5rem;
+    text-shadow: 5px 0 0 black, -5px 0 0 black, 0 5px 0 black, 0 -5px 0 black, 5px 5px black, -5px -5px 0 black, 5px -5px 0 black, -5px 5px 0 black, 10px 10px 0 rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    padding: 0px 20px;
+}
+
+.hd-name i {
+    margin: 0px 20px;
+}
+
+.hd-links {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* Presentation */
+
+.presentation {
+    width: 50%;
+    padding: 50px 50px 20px;
+}
+
+.pr-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+}
+
+.pr-main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.pr-main-photo {
+    display: flex;
+    width: 22%;
+    height: 100%;
+    padding: 8px;
+}
+
+.pr-main-photo img {
+    width: 100%;
+}
+
+.pr-main-contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+}
+
+.pr-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 0.9rem;
+    padding: 15px;
+}
+
+.pr-text p {
+    width: 90%;
+}
+
+
+/* Game~Web Dev */
+
+.gd-slide-content,
+.wd-slide-content {
+    display: flex;
+}
+
+.slide-content-info {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 10px;
+}
+
+.content-game-info,
+.content-web-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 10px;
+    width: 30%;
+}
+
+.content-game-info h3,
+.content-web-info h3 {
+    margin: 0px 5px 10px;
+}
+
+.content-game-info label,
+.content-web-info label {
+    font-size: 0.9rem;
+    text-align: left;
+    margin: 15px 5px;
+}
+
+.game-info-tools,
+.web-info-tools {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 25px 5px;
+}
+
+.game-info-tools__icons,
+.web-info-tools__icons {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 10px 5px;
+}
+
+.content-web-info .web-info-year {
+    margin-top: 0px;
+}
+
+.game-info-image,
+.web-info-image {
+    border: 5px solid black;
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* Game Dev - Image*/
+
+.content-game-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transition: 0.4s;
+}
+
+.content-game-image:hover .background {
+    filter: blur(2px);
+}
+
+.content-game-image:hover .button {
+    display: inline-block;
+}
+
+.alpha-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.play-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+/* Skills */
+
+.sk-container {
+    display: flex;
+    margin: 30px;
+    padding: 10px 30px;
+}
+
+.sk-container img {
+    margin: 5px 30px;
+    max-height: 100px;
+}
+
+.sk-container-group {
+    width: 20%;
+    height: 100%;
+}
+
+.sk-group-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sk-container-group h5 {
+    text-align: center;
+    padding: 10px;
+}
+
+.sk-container img.sk-icon,
+.sk-icon {
+    font-size: 50px;
+    margin: 10px 30px;
+    padding: 0px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
+/* Contact */
+
+.contact {
+    position: relative;
+}
+
+.contact img {
+    max-width: 100%
+}
+
+.fade-container {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    background-image: linear-gradient(#3d3d3d00, #151515FF);
+}
+
+.cv_click {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}

@@ -1,0 +1,70 @@
+.nes-container.is-dark {
+    background-color: #00000000;
+}
+
+.nes-container.is-dark::after {
+    background-color: #00000000;
+}
+
+.game-dev .nes-container.is-dark.with-title>.title {
+    background-color: #2D2D2D;
+}
+
+.web-dev .nes-container.is-dark.with-title>.title {
+    background-color: #242424;
+}
+
+.nes-container.with-title>.title {
+    margin: -2.25rem 0 1rem;
+}
+
+.skills .nes-container.is-dark.with-title>.title,
+.contact .nes-container.is-dark.with-title>.title {
+    background-color: #191919;
+}
+
+.nes-btn {
+    padding: 2px 20px;
+    font-size: 0.85rem;
+    border-image-width: 1.5;
+}
+
+.nes-btn::after {
+    right: -6px;
+    bottom: -6px;
+}
+
+.nes-btn {
+    transition: transform 0.2s
+}
+
+.nes-btn:hover {
+    transform: translateY(-4px);
+}
+
+.nes-icon {
+    margin: 0px 30px;
+}
+
+
+/*animation*/
+
+.bb {
+    position: fixed;
+    bottom: 0;
+    left: -200px;
+    animation-name: walk-bb;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-delay: 1s;
+}
+
+@keyframes walk-bb {
+    from {
+        left: -120vw
+    }
+    to {
+        left: 120vw
+    }
+}
