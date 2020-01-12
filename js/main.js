@@ -13,6 +13,14 @@ function formatDate(sd, ed) {
     return `${_startDate} ~ ${_endDate}`;
 }
 
+function scrollToHash(hash) {
+    if (hash !== "") {
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800);
+    }
+}
+
 function fillGameDev(data) {
     data.forEach(function(el, i) {
         var content = $(`
@@ -118,7 +126,11 @@ $(document).ready(function() {
         fillSkills(data_skills);
     });
 
-    $('.contact .fade-container').on('click', function() {
-        window.open('https://registry.jsonresume.org/cauemarcovich');
+
+    $('.hd-links .scroll').each(function(i, el) {
+        $(el).on('click', function(event) {
+            event.preventDefault();
+            scrollToHash(this.hash);
+        })
     });
 });

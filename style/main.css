@@ -31,6 +31,10 @@ header {
 
 /* header */
 
+.hd-main {
+    display: flex;
+}
+
 .hd-name {
     display: flex;
     flex-direction: row;
@@ -38,6 +42,7 @@ header {
     color: white;
     margin: 10px 10px;
     margin-bottom: 25px;
+    width: 75%;
 }
 
 .hd-name h1 {
@@ -49,6 +54,12 @@ header {
 
 .hd-name i {
     margin: 0px 20px;
+}
+
+.hd-contact {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .hd-links {
@@ -95,9 +106,15 @@ header {
 
 .pr-main-contact {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     padding: 5px;
+}
+
+.pr-main-contact p {
+    color: white;
+    margin-bottom: 0.5em;
 }
 
 .pr-text {
@@ -259,27 +276,33 @@ header {
 
 /* Contact */
 
-.contact {
-    position: relative;
+.ct-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
 }
 
-.contact img {
-    max-width: 100%
+.ct-container-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 
-.fade-container {
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    top: 10px;
-    bottom: 10px;
-    background-image: linear-gradient(#3d3d3d00, #151515FF);
+.ct-group-content {
+    margin: 10px 0px;
+    display: flex;
 }
 
-.cv_click {
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
+.ct-group-content label {
+    margin: 12px;
+}
+
+.ct-group-content a {
+    color: white;
+}
+
+.ct-group-content__curriculum {
+    margin-left: 30px;
 }
 
 
