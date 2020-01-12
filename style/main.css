@@ -28,6 +28,11 @@ header {
     box-shadow: -5px 4px;
 }
 
+.cv-link-icon {
+    position: relative;
+    top: -2px;
+}
+
 
 /* header */
 
@@ -178,6 +183,7 @@ header {
 .web-info-tools__icons {
     display: flex;
     justify-content: flex-start;
+    flex-flow: wrap;
     width: 100%;
     margin: 10px 5px;
 }
@@ -188,6 +194,8 @@ header {
 
 .game-info-image,
 .web-info-image {
+    height: 300px;
+    margin: 20px 10px;
     border: 5px solid black;
     box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.2);
 }
@@ -198,38 +206,37 @@ header {
 .content-game-image {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.background-image {
+.game-info-background {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 340px;
     transition: 0.4s;
 }
 
-.content-game-image:hover .background {
+.content-game-image:hover .game-info-image {
     filter: blur(2px);
 }
 
-.content-game-image:hover .button {
+.content-game-image:hover .play-button {
     display: inline-block;
 }
 
-.alpha-overlay {
+.content-game-image:hover .alpha-overlay {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 0px;
+    top: 0px;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
+    margin: 20px 10px;
 }
 
 .play-button {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     display: none;
 }
@@ -269,6 +276,7 @@ header {
     font-size: 50px;
     margin: 10px 30px;
     padding: 0px;
+    height: 50px;
     max-width: 50px;
     max-height: 50px;
 }
@@ -291,6 +299,7 @@ header {
 .ct-group-content {
     margin: 10px 0px;
     display: flex;
+    font-size: 14px;
 }
 
 .ct-group-content label {

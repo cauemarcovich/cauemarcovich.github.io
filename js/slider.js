@@ -24,15 +24,18 @@ function nextPage(container, slider, direction) {
         } else {
             pageIndex = slider.getInfo().slideCount - 1;
         }
+        slider.goTo('prev');
     } else if (direction === 'next') {
         if (activeDot < slider.getInfo().slideCount - 1) {
             pageIndex = activeDot + 1;
         } else {
             pageIndex = 0;
         }
+        slider.goTo('next');
     }
 
-    $(`${container} div[data-nav="${pageIndex}"]`).click();
+    $(`${container} .active`).removeClass('active');
+    $(`${container} div[data-nav="${pageIndex}"]`).addClass('active');;
 }
 
 function loaderSliders() {
@@ -41,7 +44,8 @@ function loaderSliders() {
         controls: false,
         navPosition: 'bottom',
         navAsThumbnails: true,
-        swipeAngle: false
+        swipeAngle: false,
+        // autoHeight: true
     };
 
     gd_slider = tns({...slider_config, ... { container: '#gd-slide', navContainer: '.gd-nav-container' } });
