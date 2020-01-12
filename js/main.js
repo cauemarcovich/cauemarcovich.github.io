@@ -31,7 +31,19 @@ function fillGameDev(data) {
                         <img class='game-info-image' src="img/game_dev/${el.portfolio_info.picture}.png">
                         <div class="alpha-overlay"></div>
                     </div>
-                    <img class="play-button" src="img/icons/play_button.png">
+                    <div class='content-game-button'>
+                        <a href='#' class='play-button'>      
+                            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
+                            <svg version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                                x="0px" y="0px" width="213.7px" height="213.7px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7"
+                                xml:space="preserve">  
+                                <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                                    73.5,62.5 148.5,105.8 73.5,149.1 "/>        
+                                <circle class='circle' id="XMLID_17_" fill="none"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
+                            </svg>
+                        </a>
+                    </div>
                  </div>
                  <div class="content-game-info">
                      <h3 class='game-info-title'>${el.name}</h3>
@@ -41,8 +53,7 @@ function fillGameDev(data) {
                          <div class='game-info-tools__icons'>
                          </div>
                      </div>
-                 </div>
-
+                 </div>                 
              </div>
          </div>`);
 
