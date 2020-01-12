@@ -47,7 +47,9 @@ function fillGameDev(data) {
          </div>`);
 
         el.portfolio_info.tools.forEach(function(tool, idx) {
-            var element = `<img class='sk-icon' src='img/tools/${tool}' title='${el.portfolio_info.tools_tooltip[idx]}'>`;
+            var element = `<div data-tooltip='${el.portfolio_info.tools_tooltip[idx]}'>
+                                <img class='sk-icon' src='img/tools/${tool}'>
+                            </div>`;
             $('.game-info-tools__icons', content).append(element);
         });
 
@@ -80,7 +82,9 @@ function fillWebDev(data) {
          </div>`);
 
         el.portfolio_info.tools.forEach(function(tool, idx) {
-            var element = `<img class='sk-icon' src='img/tools/${tool}' title='${el.portfolio_info.tools_tooltip[idx]}'>`;
+            var element = `<div data-tooltip='${el.portfolio_info.tools_tooltip[idx]}'>
+                                <img class='sk-icon' src='img/tools/${tool}'>
+                            </div>`;
             $('.web-info-tools__icons', content).append(element);
         });
 
@@ -99,7 +103,9 @@ function fillSkills(data) {
         `);
         var content = $('.sk-group-content', container);
         el.content.forEach(function(cont) {
-            var icon = `<img class='sk-icon' src='img/tools/${cont.icon}' title='${cont.name}'>`;
+            var icon = `<div data-tooltip='${cont.name}'>
+                            <img class='sk-icon' src='img/tools/${cont.icon}'>
+                        </div>`;
             content.append(icon);
         });
 
