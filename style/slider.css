@@ -33,6 +33,17 @@
 
 .nav-dot.active {
     background-image: linear-gradient(#d56001, #fd9b34);
+    transform: translateY(3px);
+    box-shadow: 0px 3px;
+}
+
+.dot-anim:hover {
+    transform: translateY(2px);
+    box-shadow: 0px 3px;
+}
+
+.dot-anim:focus {
+    background-image: linear-gradient(#5D5D5D, #5D5D5D);
 }
 
 
@@ -54,4 +65,41 @@
 
 .prev-arrow {
     left: 0;
+}
+
+.arrow-anim {
+    position: absolute;
+    top: 50%;
+    width: 5vmin;
+    height: 5vmin;
+    background: transparent;
+    border-top: 1vmin solid orange;
+    border-right: 1vmin solid orange;
+    box-shadow: 0 0 0 lightgray;
+    transition: all 200ms ease;
+}
+
+.arrow-anim.left {
+    left: 0;
+    transform: translate3d(0, -50%, 0) rotate(-135deg);
+}
+
+.arrow-anim.right {
+    right: 0;
+    transform: translate3d(0, -50%, 0) rotate(45deg);
+}
+
+.arrow-anim:hover {
+    border-color: orange;
+    box-shadow: 0.5vmin -0.5vmin 0 white;
+}
+
+.arrow-anim:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -60%) rotate(45deg);
+    width: 200%;
+    height: 200%;
 }

@@ -58,7 +58,7 @@ function fillGameDev(data) {
         });
 
         $('#gd-slide').append(content);
-        $('.gd-nav-container').append(`<div class="nav-dot ${i == 0 ? 'active' : ''}"></div>`);
+        $('.gd-nav-container').append(`<div class="nav-dot dot-anim ${i == 0 ? 'active' : ''}"></div>`);
     });
 }
 
