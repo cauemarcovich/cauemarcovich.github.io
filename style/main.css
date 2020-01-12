@@ -204,6 +204,7 @@ header {
 .web-info-tools__icons {
     display: flex;
     justify-content: flex-start;
+    flex-flow: wrap;
     width: 100%;
     margin: 10px 5px;
 }
