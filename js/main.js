@@ -1,49 +1,3 @@
-function loaderSliders() {
-    var slider_config = {
-        items: 1,
-        controls: false,
-        navPosition: 'bottom',
-        navAsThumbnails: true,
-        swipeAngle: false
-    };
-
-    gd_slider = tns({...slider_config, ... { container: '#gd-slide', navContainer: '.gd-nav-container' } });
-    document.querySelector('.next-arrow.gd-arrow').addEventListener('click', function() { gd_slider.goTo('next'); });
-    document.querySelector('.prev-arrow.gd-arrow').addEventListener('click', function() { gd_slider.goTo('prev'); });
-
-    wd_slider = tns({...slider_config, ... { container: '#wd-slide', navContainer: '.wd-nav-container' } });
-    document.querySelector('.next-arrow.wd-arrow').addEventListener('click', function() { wd_slider.goTo('next'); });
-    document.querySelector('.prev-arrow.wd-arrow').addEventListener('click', function() { wd_slider.goTo('prev'); });
-
-    $('.gd-nav-container').each(function(c_index, container) {
-        $('div', container).each(function(d_index, dot) {
-            $(dot).on('click', function() {
-                $this = $(this);
-
-                $('div', container).each(function(i, el) {
-                    $(el).removeClass('active');
-                });
-
-                $this.addClass('active');
-            });
-        });
-    });
-
-    $('.wd-nav-container').each(function(c_index, container) {
-        $('div', container).each(function(d_index, dot) {
-            $(dot).on('click', function() {
-                $this = $(this);
-
-                $('div', container).each(function(i, el) {
-                    $(el).removeClass('active');
-                });
-
-                $this.addClass('active');
-            });
-        });
-    });
-}
-
 function formatDate(sd, ed) {
     var startDate = sd.split('-');
     var _startDate = `${startDate[1]}/${startDate[0]}`;
@@ -59,17 +13,37 @@ function formatDate(sd, ed) {
     return `${_startDate} ~ ${_endDate}`;
 }
 
+function scrollToHash(hash) {
+    if (hash !== "") {
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800);
+    }
+}
+
 function fillGameDev(data) {
     data.forEach(function(el, i) {
         var content = $(`
          <div class='gd-slide-content'>
              <div class='slide-content-info'>
                 <div class="content-game-image">
-                    <div class="background-image">
-                        <img class='background' src="img/game_dev/${el.portfolio_info.picture}.png">
+                    <div class="game-info-background">
+                        <img class='game-info-image' src="img/game_dev/${el.portfolio_info.picture}.png">
                         <div class="alpha-overlay"></div>
                     </div>
-                    <img class="play-button" src="img/icons/play_button.png">
+                    <div class='content-game-button'>
+                        <a href='#' class='play-button'>      
+                            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
+                            <svg version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                                x="0px" y="0px" width="213.7px" height="213.7px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7"
+                                xml:space="preserve">  
+                                <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                                    73.5,62.5 148.5,105.8 73.5,149.1 "/>        
+                                <circle class='circle' id="XMLID_17_" fill="none"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
+                            </svg>
+                        </a>
+                    </div>
                  </div>
                  <div class="content-game-info">
                      <h3 class='game-info-title'>${el.name}</h3>
@@ -79,13 +53,14 @@ function fillGameDev(data) {
                          <div class='game-info-tools__icons'>
                          </div>
                      </div>
-                 </div>
-
+                 </div>                 
              </div>
          </div>`);
 
         el.portfolio_info.tools.forEach(function(tool, idx) {
-            var element = `<img class='sk-icon' src='img/tools/${tool}' title='${el.portfolio_info.tools_tooltip[idx]}'>`;
+            var element = `<div data-tooltip='${el.portfolio_info.tools_tooltip[idx]}'>
+                                <img class='sk-icon' src='img/tools/${tool}'>
+                            </div>`;
             $('.game-info-tools__icons', content).append(element);
         });
 
@@ -94,7 +69,7 @@ function fillGameDev(data) {
         });
 
         $('#gd-slide').append(content);
-        $('.gd-nav-container').append(`<div class="nav-dot ${i == 0 ? 'active' : ''}"></div>`);
+        $('.gd-nav-container').append(`<div class="nav-dot dot-anim ${i == 0 ? 'active' : ''}"></div>`);
     });
 }
 
@@ -118,7 +93,9 @@ function fillWebDev(data) {
          </div>`);
 
         el.portfolio_info.tools.forEach(function(tool, idx) {
-            var element = `<img class='sk-icon' src='img/tools/${tool}' title='${el.portfolio_info.tools_tooltip[idx]}'>`;
+            var element = `<div data-tooltip='${el.portfolio_info.tools_tooltip[idx]}'>
+                                <img class='sk-icon' src='img/tools/${tool}'>
+                            </div>`;
             $('.web-info-tools__icons', content).append(element);
         });
 
@@ -137,7 +114,9 @@ function fillSkills(data) {
         `);
         var content = $('.sk-group-content', container);
         el.content.forEach(function(cont) {
-            var icon = `<img class='sk-icon' src='img/tools/${cont.icon}' title='${cont.name}'>`;
+            var icon = `<div data-tooltip='${cont.name}'>
+                            <img class='sk-icon' src='img/tools/${cont.icon}'>
+                        </div>`;
             content.append(icon);
         });
 
@@ -164,7 +143,11 @@ $(document).ready(function() {
         fillSkills(data_skills);
     });
 
-    $('.contact .fade-container').on('click', function() {
-        window.open('https://registry.jsonresume.org/cauemarcovich');
+
+    $('.hd-links .scroll').each(function(i, el) {
+        $(el).on('click', function(event) {
+            event.preventDefault();
+            scrollToHash(this.hash);
+        })
     });
 });

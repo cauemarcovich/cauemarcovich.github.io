@@ -33,6 +33,17 @@
 
 .nav-dot.active {
     background-image: linear-gradient(#d56001, #fd9b34);
+    transform: translateY(3px);
+    box-shadow: 0px 3px;
+}
+
+.dot-anim:hover {
+    transform: translateY(2px);
+    box-shadow: 0px 3px;
+}
+
+.dot-anim:focus {
+    background-image: linear-gradient(#5D5D5D, #5D5D5D);
 }
 
 
@@ -47,51 +58,48 @@
     justify-content: center;
 }
 
-
-/* .arrow div {
-    width: 10px;
-    height: 42px;
-    background-image: linear-gradient(#d56001, #e97e1a);
-}
-
-.arrow div::after {
-    width: 10px;
-    height: 42px;
-    background-image: linear-gradient(#e97e1a, #fd9b34);
-    content: '';
-    position: relative;
-    display: block;
-    transform: rotate(90deg);
-} */
-
 .next-arrow {
     right: 0;
     justify-content: center;
 }
 
-
-/* .next-arrow div {
-    transform: rotate(-45deg) translate(12px, 10px);
-    box-shadow: -5px 4px;
-}
-
-.next-arrow div::after {
-    transform: rotate(90deg) translate(16px, 16px);
-    box-shadow: 5px 4px;
-} */
-
 .prev-arrow {
     left: 0;
 }
 
-
-/* 
-.prev-arrow div {
-    transform: rotate(45deg) translate(10px, -12px);
-    box-shadow: 5px 4px;
+.arrow-anim {
+    position: absolute;
+    top: 50%;
+    width: 5vmin;
+    height: 5vmin;
+    background: transparent;
+    border-top: 1vmin solid orange;
+    border-right: 1vmin solid orange;
+    box-shadow: 0 0 0 lightgray;
+    transition: all 200ms ease;
 }
 
-.prev-arrow div::after {
-    transform: rotate(-90deg) translate(-16px, 16px);
-    box-shadow: -4px 5px;
-} */
+.arrow-anim.left {
+    left: 0;
+    transform: translate3d(0, -50%, 0) rotate(-135deg);
+}
+
+.arrow-anim.right {
+    right: 0;
+    transform: translate3d(0, -50%, 0) rotate(45deg);
+}
+
+.arrow-anim:hover {
+    border-color: orange;
+    box-shadow: 0.5vmin -0.5vmin 0 white;
+}
+
+.arrow-anim:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -60%) rotate(45deg);
+    width: 200%;
+    height: 200%;
+}
