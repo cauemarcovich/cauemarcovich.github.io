@@ -28,6 +28,11 @@ header {
     box-shadow: -5px 4px;
 }
 
+.cv-link-icon {
+    position: relative;
+    top: -2px;
+}
+
 
 /* header */
 
