@@ -28,32 +28,6 @@ header {
     box-shadow: -5px 4px;
 }
 
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-
 
 /* header */
 
@@ -244,10 +218,10 @@ header {
     display: inline-block;
 }
 
-.alpha-overlay {
+.content-game-image:hover .alpha-overlay {
     position: absolute;
-    left: 10px;
-    top: 20px;
+    left: 0px;
+    top: 0px;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
