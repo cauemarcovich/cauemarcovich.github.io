@@ -41,7 +41,8 @@ function loaderSliders() {
         controls: false,
         navPosition: 'bottom',
         navAsThumbnails: true,
-        swipeAngle: false
+        swipeAngle: false,
+        // autoHeight: true
     };
 
     gd_slider = tns({...slider_config, ... { container: '#gd-slide', navContainer: '.gd-nav-container' } });

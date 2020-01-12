@@ -215,6 +215,8 @@ header {
 
 .game-info-image,
 .web-info-image {
+    height: 300px;
+    margin: 20px 10px;
     border: 5px solid black;
     box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.2);
 }
@@ -225,38 +227,37 @@ header {
 .content-game-image {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.background-image {
+.game-info-background {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 340px;
     transition: 0.4s;
 }
 
-.content-game-image:hover .background {
+.content-game-image:hover .game-info-image {
     filter: blur(2px);
 }
 
-.content-game-image:hover .button {
+.content-game-image:hover .play-button {
     display: inline-block;
 }
 
 .alpha-overlay {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 10px;
+    top: 20px;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
+    margin: 20px 10px;
 }
 
 .play-button {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     display: none;
 }

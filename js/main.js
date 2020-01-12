@@ -27,8 +27,8 @@ function fillGameDev(data) {
          <div class='gd-slide-content'>
              <div class='slide-content-info'>
                 <div class="content-game-image">
-                    <div class="background-image">
-                        <img class='background' src="img/game_dev/${el.portfolio_info.picture}.png">
+                    <div class="game-info-background">
+                        <img class='game-info-image' src="img/game_dev/${el.portfolio_info.picture}.png">
                         <div class="alpha-overlay"></div>
                     </div>
                     <img class="play-button" src="img/icons/play_button.png">
