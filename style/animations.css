@@ -1,3 +1,14 @@
+/* Contact Icons */
+
+.hd-contact a:hover {
+    transform: translateY(-4px);
+}
+
+.ct-group-content u:hover {
+    color: lightgray;
+}
+
+
 /* Tooltip */
 
 [data-tooltip] {
