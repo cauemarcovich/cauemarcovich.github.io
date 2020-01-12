@@ -19,6 +19,7 @@ footer {
 header {
     margin-top: 50px;
     margin-bottom: 25px;
+    flex-direction: row;
 }
 
 .break-line {
@@ -38,6 +39,7 @@ header {
     color: white;
     margin: 10px 10px;
     margin-bottom: 25px;
+    width: 75%;
 }
 
 .hd-name h1 {
@@ -49,6 +51,12 @@ header {
 
 .hd-name i {
     margin: 0px 20px;
+}
+
+.hd-contact {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .hd-links {
@@ -95,9 +103,15 @@ header {
 
 .pr-main-contact {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     padding: 5px;
+}
+
+.pr-main-contact p {
+    color: white;
+    margin-bottom: 0.5em;
 }
 
 .pr-text {
