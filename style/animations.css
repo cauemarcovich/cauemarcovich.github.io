@@ -9,6 +9,13 @@
 }
 
 
+/* Navbar */
+
+.nes-btn:hover {
+    transform: translateY(-4px);
+}
+
+
 /* Tooltip */
 
 [data-tooltip] {
@@ -145,4 +152,27 @@
 .play-button:hover .circle {
     stroke-dashoffset: 0;
     opacity: 1;
+}
+
+
+/*bb*/
+
+.bb {
+    position: fixed;
+    bottom: 0;
+    left: -200px;
+    animation-name: walk-bb;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-delay: 1s;
+}
+
+@keyframes walk-bb {
+    from {
+        left: -120vw
+    }
+    to {
+        left: 120vw
+    }
 }
