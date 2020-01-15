@@ -10,13 +10,14 @@ section,
 footer {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 75%;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
 header {
+    align-items: center;
     margin-top: 50px;
     margin-bottom: 25px;
 }
@@ -38,6 +39,8 @@ header {
 
 .hd-main {
     display: flex;
+    justify-content: space-between;
+    width: 95%;
 }
 
 .hd-name {
@@ -47,7 +50,7 @@ header {
     color: white;
     margin: 10px 10px;
     margin-bottom: 25px;
-    width: 75%;
+    /* width: 75%; */
 }
 
 .hd-name h1 {
@@ -70,7 +73,7 @@ header {
 .hd-links {
     display: flex;
     justify-content: space-around;
-    width: 70%;
+    width: 100%;
     margin: auto;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -80,7 +83,7 @@ header {
 /* Presentation */
 
 .presentation {
-    width: 50%;
+    width: 60%;
     padding: 50px 50px 20px;
 }
 
@@ -100,13 +103,16 @@ header {
 
 .pr-main-photo {
     display: flex;
-    width: 22%;
-    height: 100%;
+    width: 25%;
     padding: 8px;
 }
 
 .pr-main-photo img {
     width: 100%;
+    height: auto;
+    max-height: 200px;
+    max-width: 200px;
+    min-width: 200px;
 }
 
 .pr-main-contact {
@@ -155,7 +161,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     margin: 10px 10px;
-    width: 30%;
+    width: 50%;
 }
 
 .content-game-info h3,
@@ -274,9 +280,9 @@ header {
 .sk-container img.sk-icon,
 .sk-icon {
     font-size: 50px;
-    margin: 10px 30px;
+    margin: 5px 20px;
     padding: 0px;
-    height: 50px;
+    height: 45px;
     max-width: 50px;
     max-height: 50px;
 }
@@ -299,7 +305,7 @@ header {
 .ct-group-content {
     margin: 10px 0px;
     display: flex;
-    font-size: 14px;
+    font-size: 1em;
 }
 
 .ct-group-content label {
@@ -320,9 +326,58 @@ header {
 .credits {
     color: white;
     text-align: center;
-    font-size: 10px;
+    font-size: 1em;
 }
 
 .credits a {
     color: orange;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1500px) {
+    .header {
+        width: 95%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .hd-main {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+    .hd-name {
+        width: 95%;
+        margin-bottom: 0px;
+        justify-content: center;
+    }
+    .hd-contact {
+        width: 95%;
+        margin: 10px 10px;
+        margin-bottom: 25px;
+        justify-content: center;
+    }
+    .presentation {
+        width: 95%;
+    }
+    section {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1350px) {
+    .presentation {
+        width: 95%;
+        padding: 0px;
+    }
+    section {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .ct-group-content label {
+        font-size: 0.8em;
+    }
 }
