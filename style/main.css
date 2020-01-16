@@ -67,7 +67,13 @@ header {
 .hd-contact {
     width: 25%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    margin: 10px 10px;
+    margin-bottom: 25px;
+}
+
+.hd-contact a {
+    height: 45px;
 }
 
 .hd-links {
