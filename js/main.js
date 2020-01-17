@@ -22,6 +22,8 @@ function scrollToHash(hash) {
 }
 
 function fillGameDev(data) {
+    $('#gd-slide').html('');
+    $('.arrow, .gd-nav-container').removeAttr('hidden');
     data.forEach(function(el, i) {
         var content = $(`
          <div class='gd-slide-content'>
@@ -74,6 +76,8 @@ function fillGameDev(data) {
 }
 
 function fillWebDev(data) {
+    $('#wd-slide').html('');
+    $('.arrow, .wd-nav-container').removeAttr('hidden');
     data.forEach(function(el, i) {
         var content = $(`
          <div class='wd-slide-content'>
@@ -105,6 +109,7 @@ function fillWebDev(data) {
 }
 
 function fillSkills(data) {
+    $('.sk-container').html('');
     data.forEach(function(el) {
         var container = $(`
             <div class='sk-container-group'>
