@@ -362,7 +362,7 @@ header {
         width: 40%;
         margin: 10px 10px;
         margin-bottom: 25px;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     .presentation {
         width: 95%;
