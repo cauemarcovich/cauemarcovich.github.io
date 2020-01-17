@@ -39,5 +39,13 @@
 }
 
 .nes-icon {
-    margin: 0px 30px;
+    transform-origin: left top;
+}
+
+.nes-icon .gmail {
+    margin-top: 6px;
+}
+
+.nes-icon .whatsapp {
+    margin-top: 3px;
 }
