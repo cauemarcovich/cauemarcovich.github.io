@@ -323,17 +323,13 @@ header {
     color: white;
 }
 
-.ct-group-content__curriculum {
-    margin-left: 30px;
-}
-
 
 /* Credits */
 
 .credits {
     color: white;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.6em;
 }
 
 .credits a {
