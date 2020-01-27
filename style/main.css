@@ -385,6 +385,25 @@ header {
     }
 }
 
+@media (max-width: 1000px) {
+    .pr-main-info {
+        font-size: 1.4rem;
+    }
+    .pr-text {
+        font-size: 1.4rem;
+    }
+    .content-game-info label,
+    .content-web-info label {
+        font-size: 1.3rem;
+    }
+    .ct-group-content {
+        font-size: 1.5em;
+    }
+    .credits {
+        font-size: 1em;
+    }
+}
+
 .loader {
     position: relative;
     width: 60px;

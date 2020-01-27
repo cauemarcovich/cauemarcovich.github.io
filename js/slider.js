@@ -42,13 +42,18 @@ function nextPage(container, slider, direction) {
 
 function loaderSliders() {
     var slider_config = {
-        items: 2,
-        slideBy: 2,
+        items: 1,
+        slideBy: 1,
         controls: false,
         navPosition: 'bottom',
         navAsThumbnails: true,
         swipeAngle: false,
-        // autoHeight: true
+        responsive: {
+            1000: {
+                items: 2,
+                slideBy: 2,
+            }
+        }
     };
 
     gd_slider = tns({...slider_config, ... { container: '#gd-slide', navContainer: '.gd-nav-container' } });
