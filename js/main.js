@@ -56,7 +56,7 @@ function fillGameDev(data) {
                         <h3 class='game-info-title'>${el.name}</h3>
                         <label class='game-info-description'>${el.portfolio_info.summary_PT}</label>
                         <div class='game-info-tools'>
-                            <h4>TECNOLOGIAS</h4>
+                            <h4>TECHNOLOGIES</h4>
                             <div class='game-info-tools__icons'>
                             </div>
                         </div>
@@ -104,7 +104,7 @@ function fillWebDev(data) {
                             <label class='web-info-year'>${formatDate(el.startDate, el.endDate)}</label>
                             <label class='web-info-description'>${el.portfolio_info.summary_PT}</label>
                             <div class='web-info-tools'>
-                                <h4>TECNOLOGIAS</h4>
+                                <h4>TECHNOLOGIES</h4>
                                 <div class='web-info-tools__icons'>
                                 </div>
                             </div>
@@ -152,7 +152,7 @@ function fillSkills(data) {
 
 $(document).ready(function() {
     $.ajax({
-        url: 'https://gist.githubusercontent.com/cauemarcovich/b1c99dc9555aaf02e8dfae79ce14b4a1/raw/3d64a0723f990205fae1dcad8b2fb2dc4f0df128/resume.json',
+        url: 'https://gist.githubusercontent.com/cauemarcovich/b1c99dc9555aaf02e8dfae79ce14b4a1/raw/8de0d0e764b4b0820667ebd80a35f45e0ab2556f/resume.json',
         type: "GET",
         dataType: "json",
     }).done(function(data) {
@@ -162,7 +162,7 @@ $(document).ready(function() {
         loaderSliders();
     });
     $.ajax({
-        url: 'https://gist.githubusercontent.com/cauemarcovich/b1c99dc9555aaf02e8dfae79ce14b4a1/raw/04af4bf217d31d23d2c922e6ed6a2c95095289d1/resume_skills.json',
+        url: 'https://gist.githubusercontent.com/cauemarcovich/b1c99dc9555aaf02e8dfae79ce14b4a1/raw/8de0d0e764b4b0820667ebd80a35f45e0ab2556f/resume_skills.json',
         type: "GET",
         dataType: "json",
     }).done(function(data_skills) {
