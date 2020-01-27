@@ -24,87 +24,108 @@ function scrollToHash(hash) {
 function fillGameDev(data) {
     $('#gd-slide').html('');
     $('.arrow, .gd-nav-container').removeAttr('hidden');
-    data.forEach(function(el, i) {
-        var content = $(`
-         <div class='gd-slide-content'>
-             <div class='slide-content-info'>
-                <div class="content-game-image">
-                    <div class="game-info-background">
-                        <img class='game-info-image' src="img/game_dev/${el.portfolio_info.picture}.png">
-                        <div class="alpha-overlay"></div>
-                    </div>
-                    <div class='content-game-button'>
-                        <a href='#' class='play-button'>      
-                            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
-                            <svg version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-                                x="0px" y="0px" width="213.7px" height="213.7px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7"
-                                xml:space="preserve">  
-                                <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-                                    73.5,62.5 148.5,105.8 73.5,149.1 "/>        
-                                <circle class='circle' id="XMLID_17_" fill="none"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
-                            </svg>
-                        </a>
-                    </div>
-                 </div>
-                 <div class="content-game-info">
-                     <h3 class='game-info-title'>${el.name}</h3>
-                     <label class='game-info-description'>${el.portfolio_info.summary_PT}</label>
-                     <div class='game-info-tools'>
-                         <h4>TECNOLOGIAS</h4>
-                         <div class='game-info-tools__icons'>
-                         </div>
-                     </div>
-                 </div>                 
-             </div>
-         </div>`);
 
-        el.portfolio_info.tools.forEach(function(tool, idx) {
-            var element = `<div data-tooltip='${el.portfolio_info.tools_tooltip[idx]}'>
+    data.forEach(function(el, i) {
+        var content = null;
+        if (jQuery.isEmptyObject(el)) {
+            content = $(`<div class='gd-slide-content'><div class='slide-content-info'></div></div>`);
+        } else {
+            content = $(`
+            <div class='gd-slide-content'>
+                <div class='slide-content-info'>
+                    <div class="content-game-image">
+                        <div class="game-info-background">
+                            <img class='game-info-image' src="img/game_dev/${el.portfolio_info.picture}.png">
+                            <div class="alpha-overlay"></div>
+                        </div>
+                        <div class='content-game-button'>
+                            <a href='#' class='play-button'>      
+                                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
+                                <svg version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                                    x="0px" y="0px" width="213.7px" height="213.7px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7"
+                                    xml:space="preserve">  
+                                    <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                                        73.5,62.5 148.5,105.8 73.5,149.1 "/>        
+                                    <circle class='circle' id="XMLID_17_" fill="none"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content-game-info">
+                        <h3 class='game-info-title'>${el.name}</h3>
+                        <label class='game-info-description'>${el.portfolio_info.summary_PT}</label>
+                        <div class='game-info-tools'>
+                            <h4>TECNOLOGIAS</h4>
+                            <div class='game-info-tools__icons'>
+                            </div>
+                        </div>
+                    </div>                 
+                </div>
+            </div>`);
+
+            el.portfolio_info.tools.forEach(function(tool, idx) {
+                var element = `<div data-tooltip='${el.portfolio_info.tools_tooltip[idx]}'>
                                 <img class='sk-icon' src='img/tools/${tool}'>
                             </div>`;
-            $('.game-info-tools__icons', content).append(element);
-        });
+                $('.game-info-tools__icons', content).append(element);
+            });
 
-        $('.content-game-image', content).on('click', function() {
-            window.open(el.website);
-        });
+            $('.content-game-image', content).on('click', function() {
+                window.open(el.website);
+            });
+        }
 
         $('#gd-slide').append(content);
-        $('.gd-nav-container').append(`<div class="nav-dot dot-anim ${i == 0 ? 'active' : ''}"></div>`);
+        if (i % 2 == 0) {
+            $('.gd-nav-container').append(`<div class="nav-dot dot-anim ${i == 0 ? 'active' : ''}"></div>`);
+        } else {
+            $('.gd-nav-container').append(`<div class="nav-dot dot-anim" hidden></div>`);
+        }
     });
+
 }
 
 function fillWebDev(data) {
     $('#wd-slide').html('');
     $('.arrow, .wd-nav-container').removeAttr('hidden');
-    data.forEach(function(el, i) {
-        var content = $(`
-         <div class='wd-slide-content'>
-             <div class='slide-content-info'>
-                 <img class='web-info-image' src="img/web_dev/${el.portfolio_info.picture}.png">
-                 <div class="content-web-info">
-                     <h3 class='web-info-title'>${el.company}</h3>
-                     <label class='web-info-year'>${formatDate(el.startDate, el.endDate)}</label>
-                     <label class='web-info-description'>${el.portfolio_info.summary_PT}</label>
-                     <div class='web-info-tools'>
-                         <h4>TECNOLOGIAS</h4>
-                         <div class='web-info-tools__icons'>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>`);
+    var content = null;
 
-        el.portfolio_info.tools.forEach(function(tool, idx) {
-            var element = `<div data-tooltip='${el.portfolio_info.tools_tooltip[idx]}'>
+    data.forEach(function(el, i) {
+        if (jQuery.isEmptyObject(el)) {
+            content = $(`<div class='wd-slide-content'><div class='slide-content-info'></div></div>`);
+        } else {
+            content = $(`
+                <div class='wd-slide-content'>
+                    <div class='slide-content-info'>
+                        <img class='web-info-image' src="img/web_dev/${el.portfolio_info.picture}.png">
+                        <div class="content-web-info">
+                            <h3 class='web-info-title'>${el.company}</h3>
+                            <label class='web-info-year'>${formatDate(el.startDate, el.endDate)}</label>
+                            <label class='web-info-description'>${el.portfolio_info.summary_PT}</label>
+                            <div class='web-info-tools'>
+                                <h4>TECNOLOGIAS</h4>
+                                <div class='web-info-tools__icons'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`);
+
+            el.portfolio_info.tools.forEach(function(tool, idx) {
+                var element = `<div data-tooltip='${el.portfolio_info.tools_tooltip[idx]}'>
                                 <img class='sk-icon' src='img/tools/${tool}'>
                             </div>`;
-            $('.web-info-tools__icons', content).append(element);
-        });
+                $('.web-info-tools__icons', content).append(element);
+            });
+        }
 
         $('#wd-slide').append(content);
-        $('.wd-nav-container').append(`<div class="nav-dot ${i == 0 ? 'active' : ''}"></div>`);
+        if (i % 2 == 0) {
+            $('.wd-nav-container').append(`<div class="nav-dot ${i == 0 ? 'active' : ''}"></div>`);
+        } else {
+            $('.wd-nav-container').append(`<div class="nav-dot dot-anim" hidden></div>`);
+        }
     });
 }
 
@@ -131,7 +152,7 @@ function fillSkills(data) {
 
 $(document).ready(function() {
     $.ajax({
-        url: 'https://gist.githubusercontent.com/cauemarcovich/b1c99dc9555aaf02e8dfae79ce14b4a1/raw/04af4bf217d31d23d2c922e6ed6a2c95095289d1/resume.json',
+        url: 'https://gist.githubusercontent.com/cauemarcovich/b1c99dc9555aaf02e8dfae79ce14b4a1/raw/3d64a0723f990205fae1dcad8b2fb2dc4f0df128/resume.json',
         type: "GET",
         dataType: "json",
     }).done(function(data) {
