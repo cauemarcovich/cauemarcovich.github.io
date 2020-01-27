@@ -157,7 +157,8 @@ header {
 
 .slide-content-info {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     margin: 30px 10px;
 }
 
@@ -165,9 +166,9 @@ header {
 .content-web-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin: 10px 10px;
-    width: 50%;
+    width: 100%;
 }
 
 .content-game-info h3,
@@ -177,16 +178,16 @@ header {
 
 .content-game-info label,
 .content-web-info label {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: left;
-    margin: 15px 5px;
+    margin: 15px 15px;
 }
 
 .game-info-tools,
 .web-info-tools {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     margin: 25px 5px;
 }
@@ -194,9 +195,9 @@ header {
 .game-info-tools__icons,
 .web-info-tools__icons {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-flow: wrap;
-    width: 100%;
+    width: 70%;
     margin: 10px 5px;
 }
 
