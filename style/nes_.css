@@ -49,3 +49,7 @@
 .nes-icon .whatsapp {
     margin-top: 3px;
 }
+
+.with-title p {
+    font-size: 1.25rem;
+}
