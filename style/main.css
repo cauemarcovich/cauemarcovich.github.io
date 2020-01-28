@@ -385,7 +385,7 @@ header {
 
 @media (max-width: 1150px) {
     .ct-group-content label {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
     }
     .sk-container {
         flex-direction: column;
@@ -416,12 +416,20 @@ header {
     .pr-text {
         font-size: 1.4rem;
     }
+    .content-game-info h3,
+    .content-web-info h3 {
+        font-size: 1.5rem;
+    }
     .content-game-info label,
     .content-web-info label {
-        font-size: 0.9rem;
+        font-size: 1.4rem;
     }
-    .ct-group-content {
-        font-size: 0.9rem;
+    .content-game-info h4,
+    .content-web-info h4 {
+        font-size: 1.4rem;
+    }
+    .sk-container-group h5 {
+        font-size: 1.4rem;
     }
     .credits {
         font-size: 0.9rem;
