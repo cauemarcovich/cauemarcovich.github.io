@@ -174,11 +174,13 @@ header {
 .content-game-info h3,
 .content-web-info h3 {
     margin: 0px 5px 10px;
+    font-size: 1.15rem;
+    font-weight: normal;
 }
 
 .content-game-info label,
 .content-web-info label {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: left;
     margin: 15px 15px;
 }
@@ -282,12 +284,14 @@ header {
 .sk-container-group h5 {
     text-align: center;
     padding: 10px;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 .sk-container img.sk-icon,
 .sk-icon {
-    font-size: 50px;
-    margin: 5px 20px;
+    font-size: 0.9rem;
+    margin: 10px 20px;
     padding: 0px;
     height: 45px;
     max-width: 50px;
@@ -312,7 +316,7 @@ header {
 .ct-group-content {
     margin: 10px 0px;
     display: flex;
-    font-size: 1em;
+    font-size: 0.9rem;
 }
 
 .ct-group-content label {
@@ -323,17 +327,13 @@ header {
     color: white;
 }
 
-.ct-group-content__curriculum {
-    margin-left: 30px;
-}
-
 
 /* Credits */
 
 .credits {
     color: white;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.9rem;
 }
 
 .credits a {
@@ -385,7 +385,54 @@ header {
 
 @media (max-width: 1150px) {
     .ct-group-content label {
-        font-size: 0.8em;
+        font-size: 1.3rem;
+    }
+    .sk-container {
+        flex-direction: column;
+        padding: 0px;
+    }
+    .sk-container-group h5 {
+        padding: 0px;
+    }
+    .sk-container-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 15px 0px;
+    }
+    .ct-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pr-main {
+        padding: 15px 40px;
+    }
+    .pr-main-info {
+        font-size: 1.2rem;
+    }
+    .pr-text {
+        font-size: 1.4rem;
+    }
+    .content-game-info h3,
+    .content-web-info h3 {
+        font-size: 1.5rem;
+    }
+    .content-game-info label,
+    .content-web-info label {
+        font-size: 1.4rem;
+    }
+    .content-game-info h4,
+    .content-web-info h4 {
+        font-size: 1.4rem;
+    }
+    .sk-container-group h5 {
+        font-size: 1.4rem;
+    }
+    .credits {
+        font-size: 0.9rem;
     }
 }
 
