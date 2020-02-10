@@ -152,7 +152,7 @@ function fillSkills(data) {
 
 $(document).ready(function() {
     $.ajax({
-        url: 'https://gist.githubusercontent.com/cauemarcovich/b1c99dc9555aaf02e8dfae79ce14b4a1/raw/8de0d0e764b4b0820667ebd80a35f45e0ab2556f/resume.json',
+        url: 'https://gist.githubusercontent.com/cauemarcovich/b1c99dc9555aaf02e8dfae79ce14b4a1/raw/56af1539137f2ab0aefe70c09a26cb27c10a0381/resume.json',
         type: "GET",
         dataType: "json",
     }).done(function(data) {
