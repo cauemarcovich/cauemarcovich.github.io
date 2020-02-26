@@ -152,7 +152,7 @@ function fillSkills(data) {
 
 $(document).ready(function() {
     $.ajax({
-        url: 'https://gist.githubusercontent.com/cauemarcovich/b1c99dc9555aaf02e8dfae79ce14b4a1/raw/68eff242f49c666abb4e476f4b16f56649b9f35c/resume.json',
+        url: 'https://gist.githubusercontent.com/cauemarcovich/19c9a4ec9b9b4a29a040cc9debeea0d5/raw/b48ee1b3dcf0240b0fc0f3036b936ad624cca23e/resume.json',
         type: "GET",
         dataType: "json",
     }).done(function(data) {
@@ -162,7 +162,7 @@ $(document).ready(function() {
         loaderSliders();
     });
     $.ajax({
-        url: 'https://gist.githubusercontent.com/cauemarcovich/b1c99dc9555aaf02e8dfae79ce14b4a1/raw/8de0d0e764b4b0820667ebd80a35f45e0ab2556f/resume_skills.json',
+        url: 'https://gist.githubusercontent.com/cauemarcovich/19c9a4ec9b9b4a29a040cc9debeea0d5/raw/b48ee1b3dcf0240b0fc0f3036b936ad624cca23e/resume_skills.json',
         type: "GET",
         dataType: "json",
     }).done(function(data_skills) {
