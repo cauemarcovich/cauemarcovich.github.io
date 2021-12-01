@@ -158,7 +158,7 @@ $(document).ready(function() {
     // });
     // var x = await teste();
     $.ajax({
-        url: 'https://gist.githubusercontent.com/cauemarcovich/19c9a4ec9b9b4a29a040cc9debeea0d5/raw/e49ee788b8c09b9f7ac422cd9b7c440f0cbd4f5b/resume.json',
+        url: 'https://gist.githubusercontent.com/cauemarcovich/19c9a4ec9b9b4a29a040cc9debeea0d5/raw/9925f16eadfe930d594ba96203e5d97f97df3158/resume.json',
         type: "GET",
         dataType: "json"
     }).done(function(data) {
@@ -175,7 +175,7 @@ $(document).ready(function() {
         console.log(c);
     });
     $.ajax({
-        url: 'https://gist.githubusercontent.com/cauemarcovich/19c9a4ec9b9b4a29a040cc9debeea0d5/raw/e49ee788b8c09b9f7ac422cd9b7c440f0cbd4f5b/resume_skills.json',
+        url: 'https://gist.githubusercontent.com/cauemarcovich/19c9a4ec9b9b4a29a040cc9debeea0d5/raw/9925f16eadfe930d594ba96203e5d97f97df3158/resume_skills.json',
         type: "GET",
         dataType: "json",
     }).done(function(data_skills) {
