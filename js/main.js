@@ -151,18 +151,31 @@ function fillSkills(data) {
 }
 
 $(document).ready(function() {
+    // const teste = await $.ajax({
+    //     url: 'https://gist.githubusercontent.com/cauemarcovich/19c9a4ec9b9b4a29a040cc9debeea0d5/raw/d6738c5383f412db5fea942e723ba23fd1311388/resume.json',
+    //     type: "GET",
+    //     dataType: "json"
+    // });
+    // var x = await teste();
     $.ajax({
-        url: 'https://gist.githubusercontent.com/cauemarcovich/19c9a4ec9b9b4a29a040cc9debeea0d5/raw/b48ee1b3dcf0240b0fc0f3036b936ad624cca23e/resume.json',
+        url: 'https://gist.githubusercontent.com/cauemarcovich/19c9a4ec9b9b4a29a040cc9debeea0d5/raw/e49ee788b8c09b9f7ac422cd9b7c440f0cbd4f5b/resume.json',
         type: "GET",
-        dataType: "json",
+        dataType: "json"
     }).done(function(data) {
+        console.log(data);
         fillGameDev(data.publications);
         fillWebDev(data.work);
-
         loaderSliders();
+    }).fail(function(data, d, a, b, c) {
+        console.log("Error:");
+        console.log(data);
+        console.log(d);
+        console.log(a);
+        console.log(b);
+        console.log(c);
     });
     $.ajax({
-        url: 'https://gist.githubusercontent.com/cauemarcovich/19c9a4ec9b9b4a29a040cc9debeea0d5/raw/b48ee1b3dcf0240b0fc0f3036b936ad624cca23e/resume_skills.json',
+        url: 'https://gist.githubusercontent.com/cauemarcovich/19c9a4ec9b9b4a29a040cc9debeea0d5/raw/e49ee788b8c09b9f7ac422cd9b7c440f0cbd4f5b/resume_skills.json',
         type: "GET",
         dataType: "json",
     }).done(function(data_skills) {
