@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?dqpp5k');
+  src:  url('fonts/icomoon.eot?dqpp5k#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?dqpp5k') format('truetype'),
+    url('fonts/icomoon.woff?dqpp5k') format('woff'),
+    url('fonts/icomoon.svg?dqpp5k#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-rpg-maker:before {
+  content: "\e1000";
+}
+.icon-photoshop:before {
+  content: "\e1001";
+}
+.icon-android:before {
+  content: "\e1002";
+}
+.icon-apple:before {
+  content: "\e1003";
+}
+.icon-applestore:before {
+  content: "\e1003";
+}
+.icon-atlassian:before {
+  content: "\e1004";
+}
+.icon-bitbucket:before {
+  content: "\e1005";
+}
+.icon-cplusplus:before {
+  content: "\e1006";
+}
+.icon-csharp:before {
+  content: "\e1007";
+}
+.icon-css3:before {
+  content: "\e1008";
+}
+.icon-dotnet:before {
+  content: "\e1009";
+}
+.icon-dot-net:before {
+  content: "\e1009";
+}
+.icon-epic:before {
+  content: "\e100a";
+}
+.icon-epicgames:before {
+  content: "\e100a";
+}
+.icon-gimp:before {
+  content: "\e100b";
+}
+.icon-git:before {
+  content: "\e100c";
+}
+.icon-github:before {
+  content: "\e100d";
+}
+.icon-gitlab:before {
+  content: "\e100e";
+}
+.icon-godot:before {
+  content: "\e100f";
+}
+.icon-gog:before {
+  content: "\e1010";
+}
+.icon-googleplay:before {
+  content: "\e1011";
+}
+.icon-html5:before {
+  content: "\e1012";
+}
+.icon-webgl:before {
+  content: "\e1012";
+}
+.icon-ios:before {
+  content: "\e1013";
+}
+.icon-itch:before {
+  content: "\e1014";
+}
+.icon-itchio:before {
+  content: "\e1014";
+}
+.icon-linkedin:before {
+  content: "\e1015";
+}
+.icon-linux:before {
+  content: "\e900";
+}
+.icon-microsoft:before {
+  content: "\e1016";
+}
+.icon-switch:before {
+  content: "\e1017";
+}
+.icon-ps3:before {
+  content: "\e1018";
+}
+.icon-ps4:before {
+  content: "\e1019";
+}
+.icon-python:before {
+  content: "\e101a";
+}
+.icon-reddit:before {
+  content: "\e101b";
+}
+.icon-steam:before {
+  content: "\e101c";
+}
+.icon-twitch:before {
+  content: "\e101d";
+}
+.icon-ubisoft:before {
+  content: "\e101e";
+}
+.icon-unity:before {
+  content: "\e101f";
+}
+.icon-unreal:before {
+  content: "\e1020";
+}
+.icon-valve:before {
+  content: "\e1021";
+}
+.icon-visualstudio:before {
+  content: "\e1022";
+}
+.icon-vscode:before {
+  content: "\e1023";
+}
+.icon-wii:before {
+  content: "\e1024";
+}
+.icon-wiiu:before {
+  content: "\e1025";
+}
+.icon-windows:before {
+  content: "\e1026";
+}
+.icon-xbox:before {
+  content: "\e1027";
+}
+.icon-youtube:before {
+  content: "\e1028";
+}
