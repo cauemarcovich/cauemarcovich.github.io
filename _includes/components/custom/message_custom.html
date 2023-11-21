@@ -1,0 +1,27 @@
+{% capture html_code %}
+  <div class="{{ include.class | default:'note-sm2' }}" {% if include.property %}property="{{ include.property }}"{% endif %}>
+    {% if include.platforms.size > 0 %}
+      {% assign platforms_list = include.platforms | split: ','%}      
+      <p>
+        Available on<br>
+        {% for platform in platforms_list %}
+          {% include components/custom/icon.html icon=platform %}
+        {% endfor %}
+      </p>
+      <div class="hr pb0"></div>
+    {% endif %}
+
+    {% if include.tools.size > 0 %}
+      {% assign tools_list = include.tools | split: ','%}      
+      <p>
+        Tools<br/>        
+        {% for tool_item in tools_list %}
+          {% include components/custom/icon.html icon=tool_item %}
+        {% endfor %}
+      </p>
+      <div class="hr pb0"></div>
+    {% endif %}
+  </div>
+{% endcapture %}
+
+{% include components/message.html alt=html_code %}

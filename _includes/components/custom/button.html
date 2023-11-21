@@ -1,0 +1,6 @@
+{% if include.source %}
+  <a href="{% include smart-url url=include.source %}" class="btn btn-sm btn-primary mt1" target="_blank">
+    {% include components/custom/icon.html icon=include.icon %}
+    {{ include.text | default: "Source" }}
+  </a>
+{% endif %}

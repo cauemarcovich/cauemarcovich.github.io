@@ -1,0 +1,69 @@
+{% assign temp_page = include.temp_page %}
+
+{% if include.show_separators %}
+  <div class="hr pb0"></div>
+{% endif %}
+
+{% assign class = "" %}
+{% if include.stores.size > 0 and include.sources.size > 0 %}
+  <div class="columns card-buttons{% unless include.show_titles %} card-buttons-simple{% endunless %}">
+  {% assign class = "column-1-2" %}
+{% elsif include.stores.size > 0 or include.sources.size > 0 %}
+  <div class="columns card-buttons{% unless include.show_titles %} card-buttons-simple{% endunless %}">
+  {% assign class = "column-1" %}
+{% endif %}
+
+{% if include.stores.size > 0 %}
+  <div class="column {{class}}">
+    {% if include.show_titles %}
+      <h6>Play</h6>
+    {% endif %}
+    <div class="screen-only">  
+      {% for store in include.stores %}
+        {% assign store_slug = store[0] %}
+        {% assign url = store[1] %}
+
+        {% assign store_title = "" %}
+        {% for store_text in site.data.strings.custom.stores %}
+          {% if store_text[0] == store_slug %}
+            {% assign store_title = store_text[1] %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+
+        {% include components/custom/button.html source=url text=store_title icon=store_slug %}
+      {% endfor %}  
+    </div>
+  </div>
+{% endif %}
+
+{% if include.sources.size > 0 %}
+  <div class="column {{class}}">
+    {% if include.show_titles %}
+      <h6>Sources</h6>
+    {% endif %}
+    <div class="screen-only ">
+      {% for source in include.sources %}
+        {% assign source_slug = source[0] %}
+        {% assign url = source[1] %}
+      
+        {% assign source_title = "" %}
+        {% for source_text in site.data.strings.custom.sources %}
+          {% if source_text[0] == source_slug %}
+            {% assign source_title = source_text[1] %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      
+        {% include components/custom/button.html source=url text=source_title icon=source_slug %}
+      {% endfor %} 
+    </div> 
+  </div>
+{% endif %}
+
+{% if include.stores.size > 0 or include.sources.size > 0 %}  </div>
+{% endif %}
+
+{% if include.show_separators %}
+  <div class="hr pb0"></div>
+{% endif %}

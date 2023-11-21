@@ -1,0 +1,176 @@
+basics:
+  name:     "Caue Marcovich"
+  label:    "Game Developer"
+  picture: /assets/img/photo.jpg
+  #picture:  /assets/img/tallonic.gif
+  email:    "srmarcovich@gmail.com"
+  #phone:    "(+55) 11-96907-6662"
+  whatsapp: "+55 11 969076662"
+  #website:  "https://cauemarcovich.github.io/"
+  linkedin: "https://www.linkedin.com/in/caue-marcovich/"
+  summary: |
+    I'm a game developer based in São Paulo, Brazil, working in the the game industry for 2 years and as a web developer for 7 years.<br><br>
+    I’m always up for a challenge, and looking for meaninful projects.
+    If you have any question, please don't hesitate to contact me. I'm looking forward to hear from you.
+  profiles:
+    # - network: "LinkedIn"
+    #   username: "in/caue-marcovich"
+    #   url: "https://www.linkedin.com/in/caue-marcovich/"
+    - network: "website"
+      username: "portfolio"
+      url: "https://cauemarcovich.github.io/"
+    - network: "Itchio"
+      username: "tallonic"
+      url: "https://tallonic.itch.io/"
+    - network: "Gitlab"
+      username: "@tallonic"
+      url: "https://gitlab.com/tallonic"
+    - network: "Github"
+      username: "cauemarcovich"
+      url: "https://github.com/cauemarcovich"
+work:  
+  - company: "VRGlass"
+    position: "Unity Developer"
+    website: "https://vrglass.com/"
+    startDate: "2022-11-01"
+    endDate: "2023-07-14"
+    summary: |
+      Experience as a Unity Developer on [**Virtual Town**][virtualtown], a metaverse environment for B2B.
+
+      [virtualtown]: /games/virtual-town/
+    highlights:
+      - "Refactoring and modularization of the project"
+      - "Creation of an internal registry server for the company"
+      - "Enhancements in multiplayer minigames"
+      - "Creation of a sandbox environment for the customer"
+  - company: "Lunic Games Entretenimento Ltda"
+    position: "Unity Developer"
+    website: https://lunicgames.com"
+    startDate: "2022-10-24"
+    endDate: "2023-01-16"
+    summary: |
+      Experience as Unity Developer on the game [**Star Strikers**][starstrikers].  
+      I was responsible for project *documentation* and the *championship system*.
+
+      [starstrikers]: /games/star-strikers/
+    highlights:
+      - "Documentation"
+      - "Championship system"
+      - "Bug fixes"
+  - company: "Crenix Games"
+    position: "Unity Developer"
+    website: "https://www.linkedin.com/company/crenix-games/"
+    startDate: "2021-06-24"
+    endDate: "2022-05-31"
+    summary: |
+      Development of the game [**As Aventuras do Capitão Algodão**][aventurasalgodao], which won the [***Best Educational Game***][aventurasalgodao-award] award at [***BIG Festival***][bigfestival].
+
+      [aventurasalgodao]: /games/cotton-captain/
+      [aventurasalgodao-award]: https://games.bigfestival.com.br/BIG2022/game/
+      [bigfestival]: https://bigfestival.com.br/
+    highlights:
+      - "Dialogue System (including text and voice acting)"
+      - "Quests"
+      - "Inventory"
+      - "Movement with Pathfinding"
+      - "UI (programming and minor adjustments only)"
+      - "2 Puzzles"
+  - company: "MadeinWeb"
+    position: ".NET Developer"
+    website: "https://madeinweb.com.br/"
+    startDate: "2018-07-23"
+    endDate: "2021-10-31"
+    summary: |
+      Experience as a *Web Developer* with a focus on backend.<br><br>
+      In the first 10 months, I was allocated to a client to refactor *VB* systems to *.NET*.<br>
+      Later, I worked in-house at MadeinWeb, contributing to several .NET projects.
+  - company: "Level Up!"
+    position: ".NET Developer"
+    website: "https://br.leveluplatam.com/"
+    startDate: "2011-11-08"
+    endDate: "2016-05-17"
+    summary: |
+      Experience as a *.Net Developer* on the company's internal tools and website.  
+      I was also a part of a team with the goal of creating a sales platform in Brazil, now known as [**Hype**][hype].
+
+      [hype]: https://hype.games/
+education:
+  - institution: "Universidade Cruzeiro do Sul"
+    area: "Jogos Digitais"
+    studyType: "Associate"
+    startDate: "2018-07-01"
+    endDate: "2020-06-30"
+  - institution: "SENAI - Fundação Zerrenner"
+    area: "Inf. Industrial"
+    studyType: "Certificate Program"
+    startDate: "2009-01-01"
+    endDate: "2010-12-31"
+awards:
+  - title: "Best Educational Game"
+    awarder: "Big Festival"
+    summary: |
+      [Awarded][aventurasalgodao-award] for the game [**As Aventuras do Capitão Algodão**][aventurasalgodao] by [**Crenix Games**][crenix], which I collaborated as the main programmer.
+      The jury consisted entirely of children from GRAAC.
+      
+      [crenix]: https://www.linkedin.com/company/crenix-games/
+      [aventurasalgodao]: /games/cotton-captain/
+      [aventurasalgodao-award]: https://games.bigfestival.com.br/BIG2022/game/
+skills:
+  - name: "Unity"
+    level: "Intermediate"
+    keywords:
+      - "2D"
+      - "UI"
+      - "Editor Scripting"
+      - "Addressables"      
+      - "More..."
+  - name: ".NET"
+    level: "Master"
+    keywords:
+      - ".Net Framework 3.5 ~ 8.0"
+      - ".Net Core"
+  - name: "Front End (HTML, CSS, JS + frameworks)"
+    level: "Beginner"
+    keywords:
+      - "HTML"
+      - "CSS"
+      - "JS (vanilla)"
+      - "Jquery"
+      - "Angular"
+      - "Vue"
+  - name: "Relational Databases"
+    level: "Intermediate"
+    keywords:
+      - "SQL"
+      - "MySQL"
+      - "Postgree"
+      - "Oracle"
+  - name: "NoSQL"
+    level: "Beginner"
+    keywords:
+      - "MongoDB"
+languages:
+  - language: "Brazillian"
+    fluency: "Native speaker"
+  - language: "English"
+    fluency: "Limited working proficiency"
+interests:
+  - name: "Games"
+    keywords:
+      - "Metroidvania"
+      - "Management"
+      - "Tower Defense"
+      - "Cooperative Games"
+  - name: "Musics"
+    keywords:
+      - "Game/Movie OST"
+      - "Rock/Metal"
+      - "Indie"
+      - "Folk"
+      - "EDM"      
+  - name: "Movies"
+    keywords:
+      - "Psychological Drama"
+      - "Fantasy"
+      - "Animes"
+      - "Thriller"
