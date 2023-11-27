@@ -27,7 +27,7 @@ featured:    false
 ## My Contribution
 For this project, I joined as a **freelancer**, assisting the game's programming team.
 
-Initially, I was appointed to *study the project* and *create the documentation*. We tought it would be a good way to get acquaintance with the project code.
+Initially, I was appointed to *study the project* and *create the documentation*. We thought it would be a good way to get acquaintance with the project code.
 Afterwards, I took responsibility for the *championship game flow*. In this role, I received the art brief, and my task was to 
 implement it in Unity and develop the championship game flow.
 
