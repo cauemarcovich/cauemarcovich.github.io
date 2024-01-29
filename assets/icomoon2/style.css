@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?dqpp5k');
-  src:  url('fonts/icomoon.eot?dqpp5k#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?dqpp5k') format('truetype'),
-    url('fonts/icomoon.woff?dqpp5k') format('woff'),
-    url('fonts/icomoon.svg?dqpp5k#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?wg1ctb');
+  src:  url('fonts/icomoon.eot?wg1ctb#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?wg1ctb') format('truetype'),
+    url('fonts/icomoon.woff?wg1ctb') format('woff'),
+    url('fonts/icomoon.svg?wg1ctb#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cv-doc:before {
+  content: "\e900";
+}
+.icon-linux:before {
+  content: "\e901";
+}
 .icon-rpg-maker:before {
   content: "\e1000";
 }
@@ -35,9 +41,6 @@
   content: "\e1002";
 }
 .icon-apple:before {
-  content: "\e1003";
-}
-.icon-applestore:before {
   content: "\e1003";
 }
 .icon-atlassian:before {
@@ -58,13 +61,7 @@
 .icon-dotnet:before {
   content: "\e1009";
 }
-.icon-dot-net:before {
-  content: "\e1009";
-}
 .icon-epic:before {
-  content: "\e100a";
-}
-.icon-epicgames:before {
   content: "\e100a";
 }
 .icon-gimp:before {
@@ -91,23 +88,14 @@
 .icon-html5:before {
   content: "\e1012";
 }
-.icon-webgl:before {
-  content: "\e1012";
-}
 .icon-ios:before {
   content: "\e1013";
 }
 .icon-itch:before {
   content: "\e1014";
 }
-.icon-itchio:before {
-  content: "\e1014";
-}
 .icon-linkedin:before {
   content: "\e1015";
-}
-.icon-linux:before {
-  content: "\e900";
 }
 .icon-microsoft:before {
   content: "\e1016";

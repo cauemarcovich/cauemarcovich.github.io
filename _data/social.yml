@@ -218,3 +218,6 @@ keybase:
 download:
   name: Download
   icon: icon-box-add
+cv:
+  name: Curriculum Vitae
+  icon: icon-cv-doc
