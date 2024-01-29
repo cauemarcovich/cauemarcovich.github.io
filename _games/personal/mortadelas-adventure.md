@@ -15,7 +15,7 @@ order: 5
 tools:       rpg-maker
 platforms:   windows
 stores:
-  itchio:    https://tallon300.itch.io/mortadelas-adventure
+  itchio:    https://tallonic.itch.io/mortadelas-adventure
 featured:    false
 ---
 <!-- This is commented out. -->

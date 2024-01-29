@@ -15,7 +15,7 @@ order: 7
 tools:       unity
 platforms:   webgl
 stores:
-  itchio:   https://tallon300.itch.io/2brunner
+  itchio:   https://tallonic.itch.io/2brunner
 sources:
   gitlab:   https://gitlab.com/tallonic/2brunner
 featured:    false
