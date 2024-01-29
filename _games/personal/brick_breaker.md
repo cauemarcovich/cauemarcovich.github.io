@@ -15,7 +15,7 @@ order: 6
 tools:       unity
 platforms:   windows,linux,webgl
 stores:
-  itchio:    https://tallon300.itch.io/brick-breaker
+  itchio:    https://tallonic.itch.io/brick-breaker
 sources:
   gitlab:    https://gitlab.com/tallonic/Brick_Breaker
 featured:    false
