@@ -21,7 +21,7 @@ right_column:
  - languages
  # - interests
 no_language_icons: false
-no_skill_icons: false
+hide_skill_icons: true
 buttons:  
   pdf: /assets/Caue Marcovich - Resume.pdf
   print: true
