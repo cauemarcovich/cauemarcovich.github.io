@@ -15,7 +15,7 @@ order: 4
 tools:       unity
 platforms:   windows,linux,webgl
 stores:
-  itchio:    https://tallon300.itch.io/back-in-the-loop
+  itchio:    https://tallonic.itch.io/back-in-the-loop
 featured:    false
 ---
 <!-- This is commented out. -->
