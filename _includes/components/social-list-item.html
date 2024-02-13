@@ -9,6 +9,10 @@
   {% assign app = data_social.append %}
   {% assign prep = data_social.prepend %}
 
+  {% if prep == "home" %}
+    {% assign prep = site.url %}
+  {% endif %}
+
   {% unless data_social %}
     {% if platform == "email" %}
       {% assign name = "Email" %}
