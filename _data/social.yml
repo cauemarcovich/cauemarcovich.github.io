@@ -221,3 +221,4 @@ download:
 cv:
   name: Curriculum Vitae
   icon: icon-cv-doc
+  prepend: "home"
