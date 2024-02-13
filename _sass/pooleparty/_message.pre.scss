@@ -58,4 +58,12 @@
   @extend .note-sm;
   font-size: 1rem;
 }
+
+@media screen and (max-width: 1664px) {
+  .hy-video-media {
+    padding: 0px 15px;
+    margin: 0px 15px;
+    width: 92%;
+  }
+}
 // >>>
