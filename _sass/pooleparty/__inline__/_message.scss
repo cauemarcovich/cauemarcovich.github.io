@@ -70,6 +70,15 @@
 
 
 @media screen and (max-width: 1664px) {
+  .note-sm2 {
+    display: flex;    
+
+    p {
+      width: 50%;
+      text-align: center;
+    }
+  }
+
   .hy-video-media {
     padding: 0px 15px;
     margin: 0px 15px;
