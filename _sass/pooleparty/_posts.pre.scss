@@ -29,6 +29,10 @@
   .aspect-ratio.sixteen-nine.lead {
     @extend .border-radius;
   }
+
+  @media screen and (max-width: 1376px) {
+      text-align: center;
+  }
 }
 
 body:not(.no-third-column) {
