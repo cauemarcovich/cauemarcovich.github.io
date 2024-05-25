@@ -11,7 +11,7 @@ image:
     #960w:    /assets/img/projects/hyde-v2@0,5x.jpg
     #480w:    /assets/img/projects/hyde-v2@0,25x.jpg
 order: 2
-video:       https://www.youtube.com/embed/zXu8zsRK4aA?si=K7yNgsAUaibK-5i1
+video:       https://cdn.cloudflare.steamstatic.com/steam/apps/256897036/movie480_vp9.webm?t=1683546068
 tools:       unity
 platforms:   windows
 stores:
