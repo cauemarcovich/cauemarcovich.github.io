@@ -1,6 +1,7 @@
 ---
 layout:      project_custom
 title:       "Star Strikers: Galactic Soccer"
+company:     lunic
 category:    games
 tags:        professional
 genres:      Sports
