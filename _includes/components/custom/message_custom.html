@@ -2,7 +2,7 @@
   <div class="{{ include.class | default:'note-sm2' }}" {% if include.property %}property="{{ include.property }}"{% endif %}>
     {% if include.company %}
       {% assign company_name = "/assets/img/companies/" | append: include.company | append: ".png" %}
-      <p>
+      <p class="company">
         Developer <br>
         <img src="{{company_name }}" width="100" height="100" style="border-radius:8%">
       </p>
