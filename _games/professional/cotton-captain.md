@@ -1,6 +1,7 @@
 ---
 layout:      project_custom
 title:       As Aventuras do Capitão Algodão
+company:     crenix
 category:    games
 tags:        professional
 genres:      Point'n Click, Educational

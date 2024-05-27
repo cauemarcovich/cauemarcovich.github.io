@@ -61,7 +61,7 @@ layout: base
       {% endif %}
     </div>
 
-    {% include components/custom/message_custom.html platforms=project.platforms tools=project.tools %}
+    {% include components/custom/message_custom.html company=project.company platforms=project.platforms tools=project.tools %}
     {% if project.caption %}<meta property="disambiguatingDescription" content="{{ project.caption }}"/>{% endif %}
   </header>
   
