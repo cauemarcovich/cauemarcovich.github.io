@@ -189,3 +189,7 @@ custom:
   sources:    
     github:              GitHub
     gitlab:              GitLab
+  companies:
+    crenix:              Crenix Games    
+    lunic:               Lunic Games
+    vrglass:             VRGlass

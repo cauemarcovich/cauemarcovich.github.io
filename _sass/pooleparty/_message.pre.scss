@@ -61,11 +61,21 @@
 
 @media screen and (max-width: 1664px) {
   .note-sm2 {
-    display: flex;    
+    display: flex;   
+    flex-wrap: wrap; 
 
     p {
       width: 50%;
       text-align: center;
+    }
+
+    .company {
+      width: 100%;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
     }
   }
 

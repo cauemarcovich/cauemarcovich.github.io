@@ -1,6 +1,7 @@
 ---
 layout:      project_custom
 title:       Virtual Town
+company:     vrglass
 category:    games
 tags:        professional
 genres:      Metaverso
