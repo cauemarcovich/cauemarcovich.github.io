@@ -17,7 +17,7 @@ platforms:   webgl
 stores:
   itchio:   https://tallonic.itch.io/2brunner
 sources:
-  gitlab:   https://gitlab.com/tallonic/2brunner
+  gitlab:   https://gitlab.com/tallonic_personal/2brunner
 featured:    false
 ---
 <!-- This is commented out. -->
