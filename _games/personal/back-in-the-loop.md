@@ -13,14 +13,16 @@ image:
 #video:       https://www.youtube.com/embed/6wa_dlmTFpY?si=p7HWAy-ij2_aQ1hI
 order: 4
 tools:       unity
-platforms:   windows,linux,webgl
+platforms:   windows,webgl
 stores:
   itchio:    https://tallonic.itch.io/back-in-the-loop
+sources:
+  gitlab:    https://gitlab.com/tallonic_personal/back-in-the-loop
 featured:    false
 ---
 <!-- This is commented out. -->
 
-**Back in the Loop** is a classic [**shmup**] that tells the story of a *bounty hunter spaceship*.
+**Back in the Loop** is a classic **[shmup]** that tells the story of a *bounty hunter spaceship*.
 
 The gameplay is one-shot, featuring a several enemy types and four challenging bosses.
 The game offers 3 types of shots that are upgraded in parallel, depending on the player's choice, and a powerful shot that is unlocked after the player maximizes all other shots.

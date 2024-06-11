@@ -17,7 +17,7 @@ platforms:   windows,linux,webgl
 stores:
   itchio:    https://tallonic.itch.io/brick-breaker
 sources:
-  gitlab:    https://gitlab.com/tallonic/Brick_Breaker
+  gitlab:    https://gitlab.com/tallonic_personal/Brick_Breaker
 featured:    false
 ---
 <!-- This is commented out. -->
