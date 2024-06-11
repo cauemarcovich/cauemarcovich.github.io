@@ -22,7 +22,7 @@ featured:    false
 ---
 <!-- This is commented out. -->
 
-**Worms Survivor** was a game created for the [**GameDev.tv**][gamedevtv] jam (**2024**).
+**Worms Survivor** is a game created for the [**GameDev.tv**][gamedevtv] jam (**2024**).
 It was inspired in Rock Harden from Pokemon Stadium.
 
 ***
