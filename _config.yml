@@ -28,7 +28,7 @@ keywords:              ["Development", "Unity"]
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/photo.jpg
+logo:                  /assets/img/photo.png
 #logo:                  /assets/img/tallonic.gif
 
 # This should be the same author as first entry in `_data/authors.yml`.
@@ -36,7 +36,7 @@ author:
   # Used by `jekyll-feed`:
   name:                Caue Marcovich
   email:               srmarcovich@gmail.com
-  picture:             /assets/img/photo.jpg
+  picture:             /assets/img/photo.png
   #picture:             /assets/img/tallonic.gif
   social:
     linkedin:          caue-marcovich

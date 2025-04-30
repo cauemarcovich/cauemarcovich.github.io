@@ -11,7 +11,7 @@ image:
     #1920w:   /assets/img/projects/hyde-v2.jpg
     #960w:    /assets/img/projects/hyde-v2@0,5x.jpg
     #480w:    /assets/img/projects/hyde-v2@0,25x.jpg
-order: 1
+order: 2
 video:       https://www.youtube.com/embed/lY6tEi-s06U?si=GPZJOztngnI78tRf
 stores:
   googleplay:   https://play.google.com/store/apps/details?id=com.crenixgames.pgl.aventurasdocapitaoalgodao&hl=pt&gl=US

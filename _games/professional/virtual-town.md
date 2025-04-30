@@ -12,7 +12,7 @@ image:
     #960w:    /assets/img/projects/hyde-v2@0,5x.jpg
     #480w:    /assets/img/projects/hyde-v2@0,25x.jpg
 # video:       https://www.youtube.com/embed/lY6tEi-s06U?si=GPZJOztngnI78tRf
-order: 3
+order: 4
 stores:
   site:      https://virtual.town/virtualtown/
 tools:       unity,dot-net

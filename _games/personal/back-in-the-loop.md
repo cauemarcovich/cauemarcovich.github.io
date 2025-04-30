@@ -11,7 +11,7 @@ image:
     #960w:    /assets/img/projects/hyde-v2@0,5x.jpg
     #480w:    /assets/img/projects/hyde-v2@0,25x.jpg
 #video:       https://www.youtube.com/embed/6wa_dlmTFpY?si=p7HWAy-ij2_aQ1hI
-order: 4
+order: 2
 tools:       unity
 platforms:   windows,webgl
 stores:

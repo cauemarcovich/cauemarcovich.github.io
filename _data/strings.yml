@@ -178,6 +178,7 @@ custom:
     windows:             Windows
     linux:               Linux  
     webgl:               WebGL
+    html:                Html5
     android:             Android
     ios:                 iOS
   stores:
@@ -193,3 +194,5 @@ custom:
     crenix:              Crenix Games    
     lunic:               Lunic Games
     vrglass:             VRGlass
+    heimo:               Heimo Games
+    triplano:            Triplano Games

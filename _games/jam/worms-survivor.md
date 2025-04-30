@@ -11,7 +11,7 @@ image:
     #960w:    /assets/img/projects/hyde-v2@0,5x.jpg
     #480w:    /assets/img/projects/hyde-v2@0,25x.jpg
 video:       /assets/img/projects/srcset/worms-survivor.png
-order: 7
+order: 1
 tools:       unity
 platforms:   windows,linux,webgl
 stores:
