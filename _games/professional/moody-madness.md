@@ -6,7 +6,7 @@ category:    games
 tags:        professional
 genres:      Race
 image:
-  path:      /assets/img/projects/moody-madness.jpg
+  path:      /assets/img/projects/moody-madness.png
   #srcset:
     #1920w:   /assets/img/projects/hyde-v2.jpg
     #960w:    /assets/img/projects/hyde-v2@0,5x.jpg
@@ -15,7 +15,7 @@ order: 1
 tools:       unity
 platforms:   webgl
 stores:
-  site:      https://rhino.moodymadness.com
+  site:      https://moodymadness.com
 featured:    false
 ---
 <!-- This is commented out. -->

@@ -9,7 +9,7 @@ basics:
   #website:  "https://cauemarcovich.github.io/"
   linkedin: "https://www.linkedin.com/in/caue-marcovich/"
   summary: |
-    I'm a game developer based in São Paulo, Brazil, working in the the game industry for 2 years and as a web developer for 7 years.<br><br>
+    I'm a game developer based in São Paulo, Brazil, working in the the game industry for 3 years and as a web developer for 7 years.<br><br>
     I’m always up for a challenge, and looking for meaningful projects.
     If you have any question, please don't hesitate to contact me. I'm looking forward to hear from you.
   profiles:
@@ -29,6 +29,16 @@ basics:
       username: "cauemarcovich"
       url: "https://github.com/cauemarcovich"
 work:  
+  - company: "Heimo Games Studio"
+    position: "Unity Developer"
+    website: "https://heimogames.com.br/"
+    startDate: "2024-12-01"
+    summary: |
+      UI Developer at [**Moody Madness**][moody] with experience in Unity UI Toolkit and AppUI.  
+      Refactored the project UI, migrating from the old Canvas system to the new UI Toolkit, improving maintainability and performance.
+      Skilled in creating modular, reusable interfaces, implementing UX-driven screen behaviors, and integrating UI with backend services like CBS.
+      
+      [moody]: /games/moody-madness/
   - company: "VRGlass"
     position: "Unity Developer"
     website: "https://vrglass.com/"
@@ -36,54 +46,41 @@ work:
     endDate: "2023-07-14"
     summary: |
       Experience as a Unity Developer on [**Virtual Town**][virtualtown], a metaverse environment for B2B.
+      Refactored architecture using Unity Packages, built a Verdaccio server for internal libs, and created a sandbox customization tool with JSON and Addressables.
 
       [virtualtown]: /games/virtual-town/
-    highlights:
-      - "Refactoring and modularization of the project"
-      - "Creation of an internal registry server for the company"
-      - "Enhancements in multiplayer minigames"
-      - "Creation of a sandbox environment for the customer"
   - company: "Lunic Games Entretenimento Ltda"
     position: "Unity Developer"
     website: https://lunicgames.com"
     startDate: "2022-10-24"
     endDate: "2023-01-16"
     summary: |
-      Experience as Unity Developer on the game [**Star Strikers**][starstrikers].  
-      I was responsible for project *documentation* and the *championship system*.
+      Worked as Unity Developer on the game [**Star Strikers**][starstrikers].  
+      I was responsible for project *tech documentation* and the *championship system*.
 
       [starstrikers]: /games/star-strikers/
-    highlights:
-      - "Documentation"
-      - "Championship system"
-      - "Bug fixes"
   - company: "Crenix Games"
     position: "Unity Developer"
     website: "https://www.linkedin.com/company/crenix-games/"
     startDate: "2021-06-24"
     endDate: "2022-05-31"
     summary: |
-      Development of the game [**As Aventuras do Capitão Algodão**][aventurasalgodao], which won the [***Best Educational Game***][aventurasalgodao-award] award at [***BIG Festival***][bigfestival].
+      Worked on the game [**As Aventuras do Capitão Algodão**][aventurasalgodao], which won the [***Best Educational Game***][aventurasalgodao-award] award at [***BIG Festival***][bigfestival].
+      Built core gameplay systems like movement, quests, and inventory.
+      Created a dialogue system with voice-over support to improve accessibility.
 
       [aventurasalgodao]: /games/cotton-captain/
       [aventurasalgodao-award]: https://games.bigfestival.com.br/BIG2022/game/
       [bigfestival]: https://bigfestival.com.br/
-    highlights:
-      - "Dialogue System (including text and voice acting)"
-      - "Quests"
-      - "Inventory"
-      - "Movement with Pathfinding"
-      - "UI (programming and minor adjustments only)"
-      - "2 Puzzles"
   - company: "MadeinWeb"
     position: ".NET Developer"
     website: "https://madeinweb.com.br/"
     startDate: "2018-07-23"
     endDate: "2021-10-31"
     summary: |
-      Experience as a *Web Developer* with a focus on backend.<br><br>
-      In the first 10 months, I was allocated to a client to refactor *VB* systems to *.NET*.<br>
-      Later, I worked in-house at MadeinWeb, contributing to several .NET projects.
+      Experience as a Web Developer focused on backend.  
+      Worked with .NET Core, MongoDB, Azure (including OCR and Face API), and SQL/Oracle.
+      Built features like two-factor authentication, donation systems, and hotel check-in with facial recognition.
   - company: "Level Up!"
     position: ".NET Developer"
     website: "https://br.leveluplatam.com/"
@@ -106,7 +103,7 @@ education:
     startDate: "2009-01-01"
     endDate: "2010-12-31"
 awards:
-  - title: "Best Educational Game"
+  - title: "Best Children's Game"
     awarder: "Big Festival"
     summary: |
       [Awarded][aventurasalgodao-award] for the game [**As Aventuras do Capitão Algodão**][aventurasalgodao] by [**Crenix Games**][crenix], which I collaborated as the main programmer.
